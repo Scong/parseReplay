@@ -42,7 +42,7 @@ async function downloadAndParseReplay(replay) {
 
     fs.writeFileSync(
       `${replayDir}parsed_${replay.name}_${replay.id}.json`,
-      JSON.stringify(await parser.parse(fileName))
+      JSON.stringify(await parser.parse(fileName), null, 2)
     );
   } catch (e) {
     console.log(
