@@ -1,0 +1,9 @@
+{
+  "name": "parseReplay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "w3gjs": "^2.2.0"
+  }
+}
