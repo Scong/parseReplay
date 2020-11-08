@@ -44,6 +44,15 @@ async function downloadAndParseReplay(replay) {
       `${replayDir}parsed_${replay.name}_${replay.id}.json`,
       JSON.stringify(await parser.parse(fileName), null, 2)
     );
+    console.log(
+      "successfully processed",
+      "id",
+      replay.id,
+      "name",
+      replay.name,
+      "map",
+      replay.map
+    );
   } catch (e) {
     console.log(
       "failed to handle replay, recovering, skipping",

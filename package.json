@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "glob": "^7.1.6",
     "node-fetch": "^2.6.1",
     "rimraf": "^3.0.2",
     "w3gjs": "^2.2.0"
